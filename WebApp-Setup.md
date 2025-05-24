@@ -38,3 +38,5 @@ There are alot of delibrate vulnerable web apps on Internet for learning and sec
 - Well-documented with a GitHub repo and official website: https://owasp.org/www-project-juice-shop/
 
 # 2. Set Up the Application Locally
+Here is how we can setup Juice Shop Web-app locally on our system.
+
