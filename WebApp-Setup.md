@@ -1,6 +1,6 @@
 # Web App Setup for Security Testing
 
-## 1. Finding a Mock Web Application for Cybersecurity Testing
+# 1. Finding a Mock Web Application for Cybersecurity Testing
 There are alot of delibrate vulnerable web apps on Internet for learning and security testing purposes. I selected *Juice Shop* for this task.
 
 ### Why Juice Shop?
