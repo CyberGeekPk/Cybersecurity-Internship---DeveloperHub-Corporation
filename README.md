@@ -8,7 +8,7 @@ This repository documents the work completed during my cybersecurity internship.
 
 ---
 
-## 📅 Weekly Tasks
+## Weekly Tasks
 
 ### Week 1: Security Assessment
 - Set up a mock web application
