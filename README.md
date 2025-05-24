@@ -1,5 +1,5 @@
 # Cybersecurity Internship - DeveloperHub Corporation
-This repository documents the work completed during my cybersecurity internship.
+This repository documents the work completed during my cybersecurity internship. The goal is to identify and mitigate security vulnerabilities in a sample web application.
 
 ## Project Overview
 **Task**: Strengthen the security posture of a user management web application.  
