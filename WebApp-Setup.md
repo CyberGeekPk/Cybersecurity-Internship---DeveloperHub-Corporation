@@ -36,3 +36,5 @@ There are alot of delibrate vulnerable web apps on Internet for learning and sec
 #### 6. Open Source with Active Support
 - Actively maintained by the OWASP community.
 - Well-documented with a GitHub repo and official website: https://owasp.org/www-project-juice-shop/
+
+# 2. Set Up the Application Locally
