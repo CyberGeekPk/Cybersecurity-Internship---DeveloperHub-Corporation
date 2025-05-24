@@ -1,8 +1,8 @@
 # Week 1: Vulnerability Assessment Report
 
 ## Application Tested
-- **App Name**: [Mock Web App Name]
-- **URL**: http://localhost:3000
+- **App Name**: Juice Shop
+- **URL**: http://localhost:3000 (tested on localhost)
 
 ---
 
@@ -43,3 +43,4 @@
 - Use HTTPS locally (self-signed cert for testing)
 - Enable HTTPOnly and Secure flags on cookies
 
+## Assessment Steps
