@@ -16,13 +16,13 @@ This repository documents the work completed during my cybersecurity internship.
 - Identified potential issues (XSS, SQLi, weak storage)
 - Documented findings and recommendations
 
-Explore the detailed report in [`Week 1: Security Assessment`](./Week-1-Security-Assessment)
+Explore the detailed report in [`Week 1: Security Assessment`](./Week-1-Security-Assessment.md)
 
 ---
 
 ## Web Application Setup
 
-The application used for testing is a mock user management system. See setup instructions in [`WebApp-Setup`](./WebApp Setup).
+The application used for testing is a mock user management system. See setup instructions in [`WebApp-Setup`](./WebApp-Setup.md).
 
 ---
 
