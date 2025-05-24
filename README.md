@@ -22,7 +22,7 @@ Explore the detailed report in [`Week 1: Security Assessment`](./Week-1-Security
 
 ## Web Application Setup
 
-The application used for testing is a mock user management system. See setup instructions in [`WebApp-Setup`](./WebApp-Setup).
+The application used for testing is a mock user management system. See setup instructions in [`WebApp-Setup`](./WebApp Setup).
 
 ---
 
