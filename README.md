@@ -16,7 +16,7 @@ This repository documents the work completed during my cybersecurity internship.
 - Identified potential issues (XSS, SQLi, weak storage)
 - Documented findings and recommendations
 
-Explore the detailed report in [`Week-1-Security-Assessment`](./Week-1-Security-Assessment)
+Explore the detailed report in [`Week 1: Security Assessment`](./Week-1-Security-Assessment)
 
 ---
 
