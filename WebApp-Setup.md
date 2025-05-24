@@ -46,5 +46,6 @@ Here is how we can setup Juice Shop Web-app locally on our system.
 - Now, we will download and extract Juice Shop code from this link: https://github.com/juice-shop/juice-shop
 ![image](https://github.com/user-attachments/assets/8609b165-dc24-4da6-9232-6e6d8e588cda)
 
+- After downloading, extract the folder to any location, I will put it here: C:\Juice Shop
 
 
