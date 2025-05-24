@@ -39,16 +39,15 @@ There are alot of delibrate vulnerable web apps on Internet for learning and sec
 
 # 2. Set Up the Application Locally
 Here is how we can setup Juice Shop Web-app locally on our system.
-### Step 1: Download and Install Node.js and Juice Shop Web-app
+### Step 1: Download and Install Node.js and Git
 - First we have to install Node.js from https://nodejs.org/ to run Juice Shop
 ![image](https://github.com/user-attachments/assets/06825c70-5904-42ff-b8a7-a5950a22fcd6)
 
-### Step 2: Download and Install Juice Shop Web-app
-- Now, we will download and extract Juice Shop code from this link: https://github.com/juice-shop/juice-shop
-![image](https://github.com/user-attachments/assets/8609b165-dc24-4da6-9232-6e6d8e588cda)
+### Step 2: Cloning Juice Shop
+- Now, we will clone Juice Shop and install it from this link: https://github.com/juice-shop/juice-shop.git
+![image](https://github.com/user-attachments/assets/384f2702-6584-4d4f-b02b-43548518eea2)
 
-- After downloading, extract the folder to any location, I will put it in C:\Juice Shop
-- After extracting zip files, we will use CMD to install and start the Web-app
+- Juice shop is installed successfully, now we are goig to start it using: npm start
 
 ### Step 3: Run Juice Shop Web-app
 - Open your browser and go to: http://localhost:3000
