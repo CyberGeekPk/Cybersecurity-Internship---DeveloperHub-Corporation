@@ -22,11 +22,14 @@
 - **Impact**: Encourages insecure password habits, makes user accounts susceptible to brute-force and guessing attacks.
 - **Recommendation**: Implement strong password policies like use of minimum 8 characters, at least one uppercase letter, one number, and one symbol and consider using NIST password guidelines.
 
-### 1. Cross-Site Scripting (XSS)
-- **Location**: Signup form input field
-- **Payload Used**: `<script>alert('XSS');</script>`
-- **Impact**: Allows arbitrary script execution
-- **Recommendation**: Sanitize user inputs
+### 2. Cross-Site Scripting (XSS)
+- **Location**: Search field
+- **Payload Used**: `<script>alert('XSS')</script>
+<img src=x onerror=alert('XSS')>
+<svg/onload=alert('XSS')>
+"><script>alert('XSS')</script>`
+- **Impact**: Allows arbitrary JavaScript execution
+- **Recommendation**: Sanitize user input using allowlists (not blocklists) and apply Content Security Policy (CSP).
 
 ---
 
@@ -59,7 +62,5 @@
 `<script>alert('XSS')</script>
 <img src=x onerror=alert('XSS')>
 <svg/onload=alert('XSS')>
-"><script>alert('XSS')</script>`
-<script>confirm(document.cookie)</script>
-
+"><script>alert('XSS')</script>` and the result is this, that's a successful XSS discovery! It means that Cross-Site Scripting (XSS) vulnerabilities exist in the Juice Shop application.
 ![image](https://github.com/user-attachments/assets/07bbceea-4504-431d-bf83-fd86d5794bd3)
