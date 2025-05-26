@@ -52,3 +52,6 @@ Here is how we can setup Juice Shop Web-app locally on our system.
 ### Step 3: Run Juice Shop Web-app
 - Open your browser and go to: http://localhost:3000
 - You should see the Juice Shop interface.
+
+## Try Juice Shop Web Version
+If you are facing issues with ruuning juice shop on your pc, alternatively you can use its web version fromthis link: https://demo.owasp-juice.shop/#/
