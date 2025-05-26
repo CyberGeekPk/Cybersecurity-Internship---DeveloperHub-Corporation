@@ -51,3 +51,15 @@
 - Enable HTTPOnly and Secure flags on cookies
 
 ## Assessment Steps
+
+1. Site is accepting week passwords in signup and login form.
+2. I tried `<script>alert('XSS');</script>` but it showed normal results, This suggests basic input sanitization is in place, at least in the search field.
+![image](https://github.com/user-attachments/assets/1d638001-bb4d-4918-8c0c-499065af9183)
+3. Now, I will try a different payload version, lets see how it works
+`<script>alert('XSS')</script>
+<img src=x onerror=alert('XSS')>
+<svg/onload=alert('XSS')>
+"><script>alert('XSS')</script>`
+<script>confirm(document.cookie)</script>
+
+![image](https://github.com/user-attachments/assets/07bbceea-4504-431d-bf83-fd86d5794bd3)
