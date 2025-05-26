@@ -50,13 +50,6 @@
 
 ---
 
-### 3. Weak Password Storage
-- **Observation**: Passwords stored in plain text
-- **Risk**: High
-- **Recommendation**: Hash passwords using bcrypt or Argon2
-
----
-
 ### 5. Content Security Policy (CSP) Header Not Set
 - **Observation**: The website is not using a Content Security Policy (CSP) header. This header tells web browsers what content (like scripts, images, and stylesheets) is allowed to load on the page. Without it, the browser doesn't know which sources are safe.
 - **Risk**: **High**. This significantly increases the risk of Cross-Site Scripting (XSS) attacks. Attackers could inject malicious code, leading to data theft or website defacement.
