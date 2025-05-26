@@ -22,6 +22,8 @@
 - **Impact**: Encourages insecure password habits, makes user accounts susceptible to brute-force and guessing attacks.
 - **Recommendation**: Implement strong password policies like use of minimum 8 characters, at least one uppercase letter, one number, and one symbol and consider using NIST password guidelines.
 
+---
+
 ### 2. Cross-Site Scripting (XSS)
 - **Location**: Search field
 - **Payload Used**: `<script>alert('XSS')</script>
@@ -52,6 +54,8 @@
 - Implement Content Security Policy (CSP)
 - Use HTTPS locally (self-signed cert for testing)
 - Enable HTTPOnly and Secure flags on cookies
+
+---
 
 ## Assessment Steps
 
