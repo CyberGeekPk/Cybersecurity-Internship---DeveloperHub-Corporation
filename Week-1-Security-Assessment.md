@@ -2,7 +2,7 @@
 
 ## Application Tested
 - **App Name**: Juice Shop
-- **URL**: http://localhost:3000 (tested on localhost)
+- **URL**: https://demo.owasp-juice.shop/#/
 
 ---
 
@@ -14,6 +14,13 @@
 ---
 
 ## Vulnerabilities Found
+
+### 1. Week Password Policy
+- **Location**: Signup form input field
+- **Password Used**: `12345678`
+- **Result**: Account is created successfully without any warning or enforcement of password complexity.
+- **Impact**: Encourages insecure password habits, makes user accounts susceptible to brute-force and guessing attacks.
+- **Recommendation**: Implement strong password policies like use of minimum 8 characters, at least one uppercase letter, one number, and one symbol and consider using NIST password guidelines.
 
 ### 1. Cross-Site Scripting (XSS)
 - **Location**: Signup form input field
