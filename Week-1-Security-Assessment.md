@@ -15,7 +15,7 @@
 
 ## Vulnerabilities Found
 
-### 1. Week Password Policy
+### 1. Weak Password Policy
 - **Location**: Signup form input field
 - **Password Used**: `12345678`
 - **Result**: Account is created successfully without any warning or enforcement of password complexity.
