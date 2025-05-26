@@ -29,15 +29,15 @@
 <svg/onload=alert('XSS')>
 "><script>alert('XSS')</script>`
 - **Impact**: Allows arbitrary JavaScript execution
-- **Recommendation**: Sanitize user input using allowlists (not blocklists) and apply Content Security Policy (CSP).
+- **Recommendation**: *Sanitize user input* using allowlists (not blocklists) and *apply Content Security Policy (CSP)*.
 
 ---
 
-### 2. SQL Injection
+### 3. SQL Injection - Login Bypass
 - **Location**: Login form
-- **Payload**: `' OR '1'='1`
-- **Impact**: Bypasses authentication
-- **Recommendation**: Use parameterized queries
+- **Payload**: `admin' OR '1'='1`
+- **Impact**: Bypasses authentication, unauthorized access to user/admin accounts
+- **Recommendation**: Use *parameterized queries* or *prepared statements*
 
 ---
 
@@ -64,3 +64,8 @@
 <svg/onload=alert('XSS')>
 "><script>alert('XSS')</script>` and the result is this, that's a successful XSS discovery! It means that Cross-Site Scripting (XSS) vulnerabilities exist in the Juice Shop application.
 ![image](https://github.com/user-attachments/assets/07bbceea-4504-431d-bf83-fd86d5794bd3)
+4. Now I'll try to bypass login by using basic SQL injection `admin' OR '1'='1`
+![image](https://github.com/user-attachments/assets/7a7b8b0e-ff05-4969-a17d-4b4b823f1da1)
+5. This login is successful so this website is also vulnerable to SQL Injection attacks:
+![image](https://github.com/user-attachments/assets/efcaaf2c-199a-4078-8efe-37ca6be2c29a)
+
