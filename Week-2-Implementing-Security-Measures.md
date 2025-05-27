@@ -11,32 +11,44 @@ This document outlines the vulnerabilities in a locally hosted simple user manag
 During the assessment, the following key vulnerabilities were identified:
 
 ### 2.1. Cross-Site Scripting (XSS) via Unsanitized Input
-**Description:** The application's signup form (and potentially other input fields) does not properly sanitize user-supplied data before it is processed or stored. This allows malicious scripts to be injected into the application.
+**Description:** 
+The application's signup form (and potentially other input fields) does not properly sanitize user-supplied data before it is processed or stored. This allows malicious scripts to be injected into the application.
 
-**Observation:** When attempting to register a user with a username containing a JavaScript payload (e.g., <script>alert('XSS Vulnerable!');</script>), the server accepts and stores this raw input. If this username were later displayed on a page without proper encoding or sanitization, the injected script would execute in the user's browser. While our current profile.html doesn't display the username, the vulnerability exists at the input processing level.
+**Observation:** 
+When attempting to register a user with a username containing a JavaScript payload (e.g., <script>alert('XSS Vulnerable!');</script>), the server accepts and stores this raw input. If this username were later displayed on a page without proper encoding or sanitization, the injected script would execute in the user's browser. While our current profile.html doesn't display the username, the vulnerability exists at the input processing level.
 
-**Impact:** Could lead to session hijacking, defacement of the website, redirection to malicious sites, or execution of arbitrary code in the user's browser.
+**Impact:** 
+Could lead to session hijacking, defacement of the website, redirection to malicious sites, or execution of arbitrary code in the user's browser.
 
 ### 2.2. Weak Password Storage (Plain Text)
-**Description:** User passwords are being stored in the application's mock database (a simple array in app.js) in plain, unhashed text.
+**Description:** 
+User passwords are being stored in the application's mock database (a simple array in app.js) in plain, unhashed text.
 
-**Observation:** After a user registers, the server-side console.log statement clearly outputs the users array, revealing the exact password provided by the user.
+**Observation:** 
+After a user registers, the server-side console.log statement clearly outputs the users array, revealing the exact password provided by the user.
 
-**Impact:** In the event of a database breach or unauthorized access to the server-side code, all user passwords would be immediately compromised, posing a severe security risk. This makes users susceptible to credential stuffing attacks if they reuse passwords across different services.
+**Impact:** 
+In the event of a database breach or unauthorized access to the server-side code, all user passwords would be immediately compromised, posing a severe security risk. This makes users susceptible to credential stuffing attacks if they reuse passwords across different services.
 
 ### 2.3. Simple Security Misconfiguration (Insecure Direct Object Reference / Broken Access Control)
-**Description:** The /profile route, intended for authenticated users, can be accessed directly by any user simply by typing the URL into the browser, without requiring prior login or a valid session/token.
+**Description:** 
+The /profile route, intended for authenticated users, can be accessed directly by any user simply by typing the URL into the browser, without requiring prior login or a valid session/token.
 
-**Observation:** Even after restarting the server or opening a new incognito window (where no login has occurred), navigating to http://localhost:3000/profile successfully loads the profile page.
+**Observation:** 
+Even after restarting the server or opening a new incognito window (where no login has occurred), navigating to http://localhost:3000/profile successfully loads the profile page.
 
-**Impact:** Sensitive information or functionalities intended only for authenticated users could be exposed to unauthorized individuals, leading to data breaches or unauthorized actions.
+**Impact:** 
+Sensitive information or functionalities intended only for authenticated users could be exposed to unauthorized individuals, leading to data breaches or unauthorized actions.
 
 ### 2.4. Lack of Secure HTTP Headers
-**Description:** The application does not implement robust HTTP security headers, leaving it vulnerable to various client-side attacks.
+**Description:** 
+The application does not implement robust HTTP security headers, leaving it vulnerable to various client-side attacks.
 
-**Observation:** Inspecting the network requests in browser developer tools (e.g., for index.html or app.js) reveals a lack of headers such as X-Content-Type-Options, X-Frame-Options, Strict-Transport-Security, and X-XSS-Protection.
+**Observation:** 
+Inspecting the network requests in browser developer tools (e.g., for index.html or app.js) reveals a lack of headers such as X-Content-Type-Options, X-Frame-Options, Strict-Transport-Security, and X-XSS-Protection.
 
-**Impact:** This absence can make the application more susceptible to attacks like Clickjacking, MIME-type sniffing, cross-site scripting, and downgrade attacks.
+**Impact:** 
+This absence can make the application more susceptible to attacks like Clickjacking, MIME-type sniffing, cross-site scripting, and downgrade attacks.
 
 ## 3. Areas for Improvement (Proposed Fixes for Week 2)
 Based on the identified vulnerabilities, the following security measures are recommended for implementation:
