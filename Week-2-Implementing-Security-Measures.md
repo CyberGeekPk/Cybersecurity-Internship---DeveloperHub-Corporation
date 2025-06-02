@@ -74,3 +74,42 @@ npm install validator bcrypt jsonwebtoken helmet
 - **bcrypt:** A library to hash and compare passwords securely using the bcrypt algorithm.
 - **jsonwebtoken:** A library for generating and verifying JSON Web Tokens (JWT) for authentication.
 - **helmet:** A middleware that helps secure Express apps by setting various HTTP headers.
+
+After installation, we have to make changes in source code of self hosted web app in order to patch above mentioned vulnerabilities using these libraries.
+
+## Verify the Fixes
+
+### 1. Test Input Validation (Signup):
+
+- Tried signing up with an empty username or password.
+- Tried a username with special characters like user!@#.
+- Tried a weak password (e.g., 123).
+- **Observation:** The server is now returning 400 Bad Request with specific error messages for invalid input.
+
+### 2. Test Password Hashing (Signup):
+
+- Sign up with a valid username (e.g., secureuser) and a strong password (e.g., P@ssw0rd123).
+- In terminal where app.js is running. Passowrd is now long, hashed string, not plain text.
+- **Observation:** Passwords are now hashed, not stored in plain text.
+
+### 3. Test Login with Hashed Passwords:
+
+- Tried logging in with secureuser and P@ssw0rd123.
+- **Observation:** Login success, redirected to the profile page.
+
+### 4. Test Authentication (Profile Page Access Control):
+
+- Opened a new incognito/private browser window.
+- Directly try to navigate to http://localhost:3000/profile.
+- **Observation:** Redirected back to the login page.
+- **Finding:** The profile page is now protected by token-based authentication.
+
+### 5. Check HTTP Headers (using Helmet.js):
+
+- In browser, open Developer Tools (usually F12).
+- Go to the "Network" tab.
+- Refresh http://localhost:3000/.
+- Click on the localhost request (or index.html).
+- Look at the "Response Headers" section.
+- **Observation:** You should see new security headers added by Helmet.js, such as X-Content-Type-Options, X-Frame-Options, Strict-Transport-Security, X-XSS-Protection, etc.
+- **Finding:** HTTP headers are now more secure, mitigating common client-side attacks.
