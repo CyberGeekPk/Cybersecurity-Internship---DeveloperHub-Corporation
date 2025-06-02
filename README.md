@@ -8,9 +8,9 @@ This repository documents the work completed during my cybersecurity internship.
 
 ---
 
-## Weekly Tasks
+# Weekly Tasks
 
-### Week 1: Security Assessment
+## Week 1: Security Assessment
 - Set up a mock web application
 - Performed vulnerability assessment
 - Identified potential issues (XSS, SQLi, weak storage)
@@ -18,7 +18,7 @@ This repository documents the work completed during my cybersecurity internship.
 
 Explore the detailed report in [`Week 1: Security Assessment`](./Week-1-Security-Assessment.md)
 
-### Week 2: Security Measures Implementation
+## Week 2: Security Measures Implementation
 This report summarizes the security enhancements applied to a simple user management web application, addressing identified vulnerabilities.
 #### Vulnerabilities Fixed:
 - XSS: Input sanitization and validation implemented using validator.js.
@@ -36,7 +36,7 @@ The application used for testing is a mock user management system. See setup ins
 
 ---
 
-## 📚 Resources and Tools
+## Resources and Tools
 
 - [OWASP ZAP](https://www.zaproxy.org/)
 - [Common Vulnerabilities and Exposures (CVE)](https://cve.mitre.org/)
