@@ -49,7 +49,7 @@ In Week 3, the focus was on improving the security posture of the application. K
   - Integrated **Winston** logging library for consistent, timestamped logs.
   - Enabled both console and file-based logging, with a focus on capturing security events.
 
-These measures significantly enhanced application security by identifying and mitigating vulnerabilities, improving monitoring capabilities, and enforcing secure development practices. Explore the detailed report in [`Week 3: Advanced Security`](./Week-3-Advanced-Security.md)
+These measures significantly enhanced application security by identifying and mitigating vulnerabilities, improving monitoring capabilities, and enforcing secure development practices. Explore the detailed report in [`Week 3: Advanced Security`](Week-3-Advanced-Security.md)
 
 ---
 
