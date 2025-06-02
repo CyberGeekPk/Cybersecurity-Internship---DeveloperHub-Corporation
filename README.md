@@ -28,6 +28,29 @@ This report summarizes the security enhancements applied to a simple user manage
 
 Explore the detailed report in [`Week 2: Security Measures Implementation`](./Week-2-Implementing-Security-Measures.md)
 
+## Week 3: Advanced Security
+In Week 3, the focus was on improving the security posture of the application. Key tasks and outcomes included:
+
+- **Basic Penetration Testing**
+  - Used **Nmap** to scan for open ports and exposed services.
+  - Performed browser-based testing with **Chrome DevTools** and **OWASP ZAP** to detect XSS and session vulnerabilities.
+
+- **Security Checklist Implementation**
+  - Created and applied a checklist based on industry best practices.
+  - Covered:
+    - Input validation
+    - HTTPS enforcement
+    - Password hashing
+    - Session management
+    - Error handling
+    - Dependency scanning
+
+- **Application Logging with Winston**
+  - Integrated **Winston** logging library for consistent, timestamped logs.
+  - Enabled both console and file-based logging, with a focus on capturing security events.
+
+These measures significantly enhanced application security by identifying and mitigating vulnerabilities, improving monitoring capabilities, and enforcing secure development practices. Explore the detailed report in [`Week 3: Advanced Security`](./Week-3-Advanced-Security.md)
+
 ---
 
 ## Web Application Setup
