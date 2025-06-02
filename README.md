@@ -26,7 +26,7 @@ This report summarizes the security enhancements applied to a simple user manage
 - Broken Access Control: Routes are protected using jsonwebtoken (JWT) for token-based authentication.
 - Insecure HTTP Headers: helmet.js was integrated to add essential security headers.
 
-Explore the detailed report in [`Week 2: Security Measures Implementation`](./Week-1-Security-Assessment.md)
+Explore the detailed report in [`Week 2: Security Measures Implementation`](./Week-2-Implementing-Security-Measures.md)
 
 ---
 
