@@ -64,3 +64,13 @@ Implement a robust authentication mechanism, such as token-based authentication 
 
 ### Secure HTTP Headers: 
 Utilize a security middleware (e.g., helmet.js for Express) to automatically set appropriate HTTP response headers to enhance the application's security posture against common web vulnerabilities.
+
+# Phase 2: Implementing Security Measures (Week 2)
+Now, let's fix the vulnerabilities we identified.
+
+## Install New Dependencies
+npm install validator bcrypt jsonwebtoken helmet
+- **validator:** A library for validating and sanitizing strings, like emails, URLs, and more.
+- **bcrypt:** A library to hash and compare passwords securely using the bcrypt algorithm.
+- **jsonwebtoken:** A library for generating and verifying JSON Web Tokens (JWT) for authentication.
+- **helmet:** A middleware that helps secure Express apps by setting various HTTP headers.
