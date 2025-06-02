@@ -113,3 +113,10 @@ After installation, we have to make changes in source code of self hosted web ap
 - Look at the "Response Headers" section.
 - **Observation:** You should see new security headers added by Helmet.js, such as X-Content-Type-Options, X-Frame-Options, Strict-Transport-Security, X-XSS-Protection, etc.
 - **Finding:** HTTP headers are now more secure, mitigating common client-side attacks.
+
+## Patched Vulnerabilties:
+After patching all known vulnerabilities, now our self hosted webapp is secure in following ways:
+- Input Sanitization and Validation
+- Password Hashing
+- Enhanced Authentication (Token-based)
+- Secure Data Transmission (HTTP Headers)
