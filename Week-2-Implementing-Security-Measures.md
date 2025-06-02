@@ -1,7 +1,7 @@
 # Security Measures Implementation Report: Vulnerable User Management Application
-**Date:** May 27, 2025
-**Application:** Simple User Management Web App (Self-Hosted)
-**Phase:** Week 2 - Implementing Security Measures 
+- **Date:** May 27, 2025
+- **Application:** Simple User Management Web App (Self-Hosted)
+- **Phase:** Week 2 - Implementing Security Measures 
 
 ## 1. Introduction
 This document outlines the vulnerabilities in a locally hosted simple user management web application and the security measures taken to 
