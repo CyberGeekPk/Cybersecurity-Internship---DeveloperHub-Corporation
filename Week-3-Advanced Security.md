@@ -32,3 +32,14 @@ The focus for Week 3 was on strengthening the security posture of the applicatio
 - **Tests Performed:** Input field manipulation to detect potential XSS (Cross-Site Scripting), form tampering and session management validation.
 - **Outcome:** Input sanitization implemented effectively in most fields.
 - Sessions are secured and HTTP-only cookies are enabled.
+
+## 2. Setting Up Basic Logging
+Logging is a crucial part of application security. It provides visibility into the application’s behavior, helps in identifying anomalies, and supports incident response activities.
+
+### Technology Used: Winston Logging Library
+- Installation: npm install winston
+- **Features Enabled**
+- Timestamped logs for traceability
+- Console and file-based log transport
+- Centralized security-related logging in security.log
+- Sample Log Output: 2025-06-01T10:32:00.501Z [INFO]: Application started
